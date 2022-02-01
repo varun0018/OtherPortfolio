@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Source+Sans+Pro:wght@300&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --clr-1: #fdebf7;
+  --clr-2: #fbcaff;
+  --clr-3: #fbcaff;
+  --clr-4: #fc28fb;
+  --ff-header: "Noto Serif", serif;
+  --ff-body: "Source Sans Pro", sans-serif;
+}
+button {
+  background-color: transparent;
+  border: transparent;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-family: var(--ff-header);
+}
+p {
+  font-family: var(--ff-body);
+}
+
+.nav-header {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--clr-3);
+  justify-content: space-between;
+  font-family: var(--ff-header);
+}
+
+.ham {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+}
+
+/* .nav-links {
+  text-align: center;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  background-color: var(--clr-2);
+} */
+
+img {
+  width: 270px;
+  height: 279px;
+  border-radius: 50%;
+}
+
+.home-img {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.home-para {
+  font-family: var(--ff-body);
+  font-size: 1.5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+section {
+  background-color: var(--clr-1);
+}
+
+.home-container {
+  padding: 1.5rem;
+}
+
+.home-btn {
+  padding: 1rem 2rem;
+  background-color: var(--clr-4);
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+.home-btn:hover {
+  background-color: var(--clr-3);
+}
+
+.about-container {
+  background-color: var(--clr-3);
+  padding: 3rem 1rem;
+}
+
+.about-container h1 {
+  font-family: var(--ff-header);
+}
+
+.about-container .about-paras {
+  font-size: 1.25rem;
+}
+.about-container .about-paras li {
+  margin-top: 1.5rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+  margin: 1.5rem 0.5rem;
+}
+.social p {
+  font-size: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.bold {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.show-links {
+  height: 8rem;
+}
+
+/* services */
+
+.cards {
+  background-color: var(--clr-4);
+  margin: 0.5rem 1rem;
+  padding: 2rem;
+  border-radius: 5px;
+  font-family: var(--ff-body);
+}
+.card-icon {
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+.cards h1 {
+  margin-bottom: 1rem;
+}
+.service-header {
+  padding: 1rem;
+}
+
+.cards p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* hire me */
+
+.hire-container {
+  padding: 2rem;
+}
+
+.hire-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.hire-container p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hire-btn {
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: var(--clr-4);
+  width: 80%;
+  border-radius: 5px;
+}
+.hire-btn:hover {
+  background-color: var(--clr-3);
+}
+
+/* footer */
+.footer-container {
+  text-align: center;
+  padding: 2rem;
+}
+.footer-container p {
+  font-size: 1.5rem;
+}
+
+.foot-social-links {
+  display: flex;
+  font-size: small;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cards-contaier {
+    display: flex;
+    gap: 3px;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+  }
+  .cards {
+    max-width: 300px;
+  }
+
+  /* hire */
+  .hire-container {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  /* footer */
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .foot-social-links i {
+    font-size: 1rem;
+  }
+  .foot-social-links {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navigation-btn {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    gap: 12px;
+    font-size: 1.5rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+}
